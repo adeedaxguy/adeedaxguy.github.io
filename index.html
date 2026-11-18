@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How the owner-operated MMA News Daily Windows Worker uses YouTube account access to publish checked videos.">
+  <title>MMA News Daily Windows Worker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<header><div class="wrap"><a class="brand" href="index.html">MMA News Daily Windows Worker</a><nav aria-label="Main navigation"><a href="index.html" aria-current="page">About</a><a href="privacy.html">Privacy and YouTube data</a><a href="terms.html">Terms</a></nav></div></header>
+<main class="wrap" id="content">
+  <p class="eyebrow">Owner-operated desktop app</p>
+  <h1>Publishing for MMA News Daily</h1>
+  <p>This Windows application is for the owner of the <a href="https://www.youtube.com/channel/UCOJbpJsiB8j3G6durY9lNdQ">MMA News Daily YouTube channel</a>. It does not offer public accounts or access to other channels.</p>
+  <p>The app uses the official YouTube Data API after the owner grants Google OAuth access. It checks the authorized channel, uploads an approved video as Unlisted, sets its title, description, tags and thumbnail, and checks YouTube processing and saved status. It changes that same video ID to Public only after its release checks pass. If a check fails, the job and saved evidence remain for correction.</p>
+  <div class="note"><strong>Owner control:</strong> The owner has instructed the app to begin with Unlisted visibility and make a video Public only after the required source, rights, review, processing and release checks pass. The production schedule is enabled only after full pilots prove those checks.</div>
+  <h2>Google access requested</h2>
+  <p>The app requests <code>https://www.googleapis.com/auth/youtube.force-ssl</code>. This is a broad YouTube management permission, including capabilities the app does not use. The current app uses it to identify the channel, upload and update videos and metadata, set thumbnails, and read back processing and visibility. It does not call deletion, comment, rating or caption endpoints. The app never asks for the owner's Google password.</p>
+  <p>Read the <a href="privacy.html">privacy and YouTube data notice</a> before granting access. For questions, contact <a href="mailto:adnan@technodigg.com">adnan@technodigg.com</a>.</p>
+</main>
+<footer><div class="wrap">MMA News Daily Windows Worker · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></div></footer>
+</body>
+</html>

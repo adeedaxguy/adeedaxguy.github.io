@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy and YouTube API data use for the owner-operated MMA News Daily Windows Worker.">
+  <title>Privacy and YouTube data · MMA News Daily Windows Worker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<header><div class="wrap"><a class="brand" href="index.html">MMA News Daily Windows Worker</a><nav aria-label="Main navigation"><a href="index.html">About</a><a href="privacy.html" aria-current="page">Privacy and YouTube data</a><a href="terms.html">Terms</a></nav></div></header>
+<main class="wrap" id="content">
+  <p class="eyebrow">Owner privacy notice</p>
+  <h1>Privacy and YouTube data use</h1>
+  <p>This notice covers the owner-operated MMA News Daily Windows Worker. It uses <a href="https://developers.google.com/youtube/v3">YouTube API Services</a> after the owner consents through Google OAuth. Google's handling of account data is described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. Questions, complaints or deletion requests can be sent to <a href="mailto:adnan@technodigg.com">adnan@technodigg.com</a>.</p>
+  <h2>Data and permissions</h2>
+  <p>The app requests <code>youtube.force-ssl</code>, which grants broad YouTube management access. The app reads the authorized channel ID and title; checks the channel's 50 most recent uploads for an exact title match and keeps a local duplicate-prevention journal; uploads the owner's video, title, description, tags and audience setting; sets its thumbnail; reads its video ID, processing, duration and visibility; and updates that video's visibility from Unlisted to Public only after release checks. The scope also permits actions such as deletion and managing ratings, comments and captions, but this app does not call those endpoints.</p>
+  <h2>Purpose and local records</h2>
+  <p>The channel ID ensures that the worker acts on the intended channel. Video IDs, metadata, upload session state and status readbacks support safe resume, duplicate prevention and release verification. Local production records include export hashes, sourced-claim and media-rights evidence, timecoded review findings and gate results.</p>
+  <p>The OAuth refresh credential and resumable upload URL are encrypted for the Windows user with Windows DPAPI. The OAuth client file and production records are kept in access-restricted project folders on the owner's PC. The app does not request or store the owner's Google password.</p>
+  <h2>Sharing and publication</h2>
+  <p>The app sends YouTube API requests and approved media to Google. Publishing a video Public makes its approved content and metadata available to viewers on YouTube. Separate editorial tasks may send selected topic facts, Studio Trends observations and public source links to OpenAI for research and script drafting. The local editorial bridge is limited to text packets and excludes media files and credential files; it does not send the OAuth token. The app does not sell YouTube data, use it for targeted advertising, or enable third-party advertising inside the app.</p>
+  <h2>Retention, deletion and revocation</h2>
+  <p>The local token remains while the owner keeps the grant active. The upload journal and release evidence are retained while needed to resume work, prevent duplicate inserts or document a release decision. The owner can request deletion of local data through the support address above; an active or uncertain upload must first be reconciled so deletion does not cause a duplicate. Deleting local data does not delete videos or other data held by YouTube; those must be removed through YouTube or a separately authorized tool. The owner can revoke this app's Google access through <a href="https://security.google.com/settings/security/permissions">Google security settings</a>. Revocation stops future authorized YouTube API actions.</p>
+  <p>This static information site has no analytics scripts, advertising scripts or app cookies. Its host may receive ordinary web request logs under the host's own policy.</p>
+  <p><small>Last updated: November 18, 2026. If the app's YouTube data practices change, this notice must be updated and the owner must accept the changed practices before those features are used.</small></p>
+</main>
+<footer><div class="wrap">MMA News Daily Windows Worker · <a href="index.html">About</a> · <a href="terms.html">Terms</a></div></footer>
+</body>
+</html>
